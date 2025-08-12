@@ -1,0 +1,58 @@
+import type { Bean } from '../types'
+
+export const beans: Bean[] = [
+  {
+    id: 'ethiopia-yirgacheffe',
+    name: 'Ethiopia Yirgacheffe',
+    species: 'Arabica',
+    originCountries: ['Ethiopia'],
+    processingMethods: ['washed', 'natural'],
+    flavorNotes: ['floral', 'citrus', 'tea-like'],
+    roastSuitability: ['light', 'medium'],
+  },
+  {
+    id: 'colombia-supremo',
+    name: 'Colombia Supremo',
+    species: 'Arabica',
+    originCountries: ['Colombia'],
+    processingMethods: ['washed'],
+    flavorNotes: ['chocolate', 'nutty', 'caramel'],
+    roastSuitability: ['medium', 'dark'],
+  },
+  {
+    id: 'brazil-santos',
+    name: 'Brazil Santos',
+    species: 'Arabica',
+    originCountries: ['Brazil'],
+    processingMethods: ['natural'],
+    flavorNotes: ['nutty', 'chocolate', 'low-acidity'],
+    roastSuitability: ['medium', 'dark'],
+  },
+  {
+    id: 'vietnam-robusta',
+    name: 'Vietnam Robusta',
+    species: 'Robusta',
+    originCountries: ['Vietnam'],
+    processingMethods: ['washed', 'natural'],
+    flavorNotes: ['earthy', 'bitter', 'cocoa'],
+    roastSuitability: ['dark'],
+  },
+  {
+    id: 'sumatra-mandheling',
+    name: 'Sumatra Mandheling',
+    species: 'Arabica',
+    originCountries: ['Indonesia'],
+    processingMethods: ['wet-hulled'],
+    flavorNotes: ['spice', 'earthy', 'syrupy'],
+    roastSuitability: ['medium', 'dark'],
+  },
+  {
+    id: 'liberica-philippines',
+    name: 'Liberica Philippines',
+    species: 'Liberica',
+    originCountries: ['Philippines'],
+    processingMethods: ['natural'],
+    flavorNotes: ['woody', 'smoky', 'jackfruit'],
+    roastSuitability: ['dark'],
+  },
+]
