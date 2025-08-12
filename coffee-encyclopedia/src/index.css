@@ -1,0 +1,107 @@
+/* Base */
+:root {
+  color-scheme: light dark;
+  --bg: #0f1115;
+  --panel: #151821;
+  --text: #e6e6e6;
+  --muted: #9aa4b2;
+  --accent: #8ecae6;
+  --accent-2: #ffb703;
+  --border: #2a2f3a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+}
+
+a { color: inherit; text-decoration: none; }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 24px;
+  background: rgba(21, 24, 33, 0.9);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(8px);
+}
+.brand {
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+.nav-links a { margin-left: 16px; color: var(--muted); }
+.nav-links a.active { color: var(--accent-2); }
+
+/* Home */
+.home h1 { margin-top: 0; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.tile {
+  background: var(--panel);
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.tile:hover { border-color: var(--accent); }
+
+/* Search */
+.search {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 8px 0 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #0d0f14;
+  color: var(--text);
+}
+
+/* Card */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  transition: border 0.15s ease;
+}
+.clickable .card:hover { border-color: var(--accent); cursor: pointer; }
+.card-title { margin: 0 0 4px; font-size: 1.05rem; }
+.card-subtitle { margin: 0 0 8px; color: var(--muted); font-size: 0.9rem; }
+.card-body { color: var(--muted); }
+
+/* Tags */
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #10131a;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* Typography */
+h1 { font-size: 1.8rem; margin: 16px 0; }
+h2 { font-size: 1.3rem; margin: 20px 0 8px; color: var(--muted); }
+h3 { margin: 16px 0 8px; }
+
+ul { padding-left: 18px; }
